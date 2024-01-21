@@ -1,0 +1,45 @@
+.banner{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  background-color: $adjecent;
+  display: flex;
+  width: $container-width;
+  .banner__container{
+    padding-bottom: 50px;
+    margin-right: 50px;
+    h1{
+      @include setFont("DM Serif Display, serif"){
+        font-size: 48px;
+        font-weight: bold;
+        padding-right: 50px;
+        padding-bottom: 10px;
+      }
+    }
+    p{
+      @include setFont("DM Serif Display, serif"){
+        font-size: 18px;
+        font-weight: normal;
+        padding-right: 50px;
+        padding-bottom: 20px;
+      }
+    }
+    .btn{
+      border: solid #EF8094 1px;
+      border-radius: 30px;
+      padding: 10px 20px 10px 20px;
+    }
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+@media(max-width : #{$mobile}) {
+  .banner{
+    width: 100%;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

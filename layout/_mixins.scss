@@ -1,0 +1,5 @@
+@mixin setFont($fontFamily : "DM Serif Display, serif", $fontSize : 16px){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  @content;
+}

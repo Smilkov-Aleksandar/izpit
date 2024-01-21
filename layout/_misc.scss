@@ -1,0 +1,8 @@
+.stats{
+  width: $container-width;
+  background-color: $adjecent;
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+}

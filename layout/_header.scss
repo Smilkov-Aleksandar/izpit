@@ -1,0 +1,45 @@
+@import "../generic/layout";
+@import "../generic/variables";
+@import '../layout/mixins';
+
+.container{
+  width: $container-width;
+  margin-right: auto;
+  margin-left: auto;
+  .photo{
+    width: 100%;
+    height: 20px;
+  }
+    .nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .menu{
+        ul{
+          display: flex;
+          list-style: none;
+          li{
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  .hamburger{
+    display: none;
+  }
+}
+@media(max-width : #{$mobile}) {
+  .container{
+    width: 100%;
+  }
+  .menu{
+    display: none;
+  }
+  .hamburger{
+    display: flex;
+    width: 50px;
+    height: 50px;
+  }
+}
