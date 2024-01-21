@@ -1,0 +1,19 @@
+@import "../generic/layout";
+@import "../generic/variables";
+@import "../generic/reset";
+@import "../layout/mixins";
+@import "../layout/header";
+@import "../layout/banner";
+@import "../layout/misc";
+
+
+body{
+  background-color: $color;
+  @include setFont("DM Serif Display, serif", 16px);
+  @media (max-width: #{$mobile}) {
+    font-size: 10px;
+  }
+  .container{
+    background-color: $primary;
+  }
+}
