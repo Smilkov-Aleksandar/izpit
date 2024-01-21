@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["izpit/generic/reset.scss"],"sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n"],"names":[],"version":3,"file":"index.7ada02cf.css.map","sourceRoot":"/__parcel_source_root/"}
